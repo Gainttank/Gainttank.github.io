@@ -111,7 +111,8 @@
 <meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/hexo10.png">
 <meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/hexo11.png">
 <meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/hexo12.png">
-<meta property="og:updated_time" content="2016-08-14T12:44:23.035Z">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/404.png">
+<meta property="og:updated_time" content="2016-08-14T13:44:36.860Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何搭建这个独立博客">
 <meta name="twitter:description" content="总的流程：1.下载安装Git,Node.js；2.注册coding账号或github账号（在国内推荐使用coding，一下均以coding为例）；3.在coding创建项目4.添加ssh key到coding5.安装hexo6.使用hexo搭建，配置，并上传项目">
@@ -344,40 +345,40 @@
       
 
       
-        <h3 id="总的流程："><a href="#总的流程：" class="headerlink" title="总的流程："></a>总的流程：</h3><p>1.下载安装Git,Node.js；<br>2.注册coding账号或github账号（在国内推荐使用coding，一下均以coding为例）；<br>3.在coding创建项目<br>4.添加ssh key到coding<br>5.安装hexo<br>6.使用hexo搭建，配置，并上传项目</p>
+        <h2 id="总的流程："><a href="#总的流程：" class="headerlink" title="总的流程："></a>总的流程：</h2><p>1.下载安装Git,Node.js；<br>2.注册coding账号或github账号（在国内推荐使用coding，一下均以coding为例）；<br>3.在coding创建项目<br>4.添加ssh key到coding<br>5.安装hexo<br>6.使用hexo搭建，配置，并上传项目</p>
 <a id="more"></a>
 <hr>
-<h4 id="下载并安装"><a href="#下载并安装" class="headerlink" title="下载并安装"></a>下载并安装</h4><p>&ensp; 1、<a href="https://git-scm.com/" target="_blank" rel="external">Git</a><br>&ensp; 2、<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js</a></p>
-<h5 id="注册coding并创建一个项目"><a href="#注册coding并创建一个项目" class="headerlink" title="注册coding并创建一个项目"></a>注册<a href="https://coding.net/" target="_blank" rel="external">coding</a>并创建一个项目</h5><div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/%E5%88%9B%E9%A1%B91.jpg" width="600" alt="创建项目"></div>  
+<h3 id="下载并安装"><a href="#下载并安装" class="headerlink" title="下载并安装"></a>下载并安装</h3><p>&ensp; 1、<a href="https://git-scm.com/" target="_blank" rel="external">Git</a><br>&ensp; 2、<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js</a></p>
+<h4 id="注册coding并创建一个项目"><a href="#注册coding并创建一个项目" class="headerlink" title="注册coding并创建一个项目"></a>注册<a href="https://coding.net/" target="_blank" rel="external">coding</a>并创建一个项目</h4><div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/%E5%88%9B%E9%A1%B91.jpg" width="600" alt="创建项目"></div>  
 
 <div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/%E5%88%9B%E6%83%B32.jpg" width="600" alt="创建项目"></div>
 
 
 
-<h4 id="配置SSH-keys："><a href="#配置SSH-keys：" class="headerlink" title="配置SSH keys："></a>配置SSH keys：</h4><p>以下教程主要参考CNFeat的<a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">《如何搭建一个独立博客–简明Github Pages与Hexo教程》</a>  </p>
-<h5 id="一、打开Git-bash："><a href="#一、打开Git-bash：" class="headerlink" title="一、打开Git bash："></a>一、打开Git bash：</h5><p>&emsp;&emsp;方法一：开始菜单（若生成桌面快捷键也可直接快捷键）</p>
+<h3 id="配置SSH-keys："><a href="#配置SSH-keys：" class="headerlink" title="配置SSH keys："></a>配置SSH keys：</h3><p>以下教程主要参考CNFeat的<a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">《如何搭建一个独立博客–简明Github Pages与Hexo教程》</a>  </p>
+<h4 id="一、打开Git-bash："><a href="#一、打开Git-bash：" class="headerlink" title="一、打开Git bash："></a>一、打开Git bash：</h4><p>&emsp;&emsp;方法一：开始菜单（若生成桌面快捷键也可直接快捷键）</p>
 <div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/%E6%89%93%E5%BC%801.png" width="300" alt="打开Git bash"></div> 
 
 <p>&emsp;&emsp;方法二：右击鼠标，在当前文件夹打开Git bash</p>
 <div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/%E6%89%93%E5%BC%802.png" width="250" alt="打开Git bash"></div>  
 
-<h5 id="二、配置SSH-keys："><a href="#二、配置SSH-keys：" class="headerlink" title="二、配置SSH keys："></a>二、配置SSH keys：</h5><p>1.检查SSH keys的设置</p>
+<h4 id="二、配置SSH-keys："><a href="#二、配置SSH-keys：" class="headerlink" title="二、配置SSH keys："></a>二、配置SSH keys：</h4><p>1.检查SSH keys的设置</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cd ~/.ssh 检查本机的ssh密码</div></pre></td></tr></table></figure>
 <p>如果提示：No such file or directory说明你是第一次使用git。  </p>
 <p>2.生成新的SSH keys：  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C 546704259@qq.com</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C xxxxxxxxx@xxx.com</div></pre></td></tr></table></figure>
 <div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/sshkeys1.png" width="500" alt="sshkeys1"></div>    
 
 <p>然后系统会要你输入密码：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Enter passphrase (empty for no passphrase):&lt;输入加密串&gt;</div><div class="line">Enter same passphrase again:&lt;再次输入加密串&gt;</div></pre></td></tr></table></figure>
-<p>在回车中会提示你输入一个密码，这个密码会在你提交项目的时候使用，如果为空的话提交项目时则不用输入。这个设置是防止别人往你的项目里提交内容。  </p>
-<p>注意：输入密码时没有*字样，直接继续输入即可。  </p>
+<p>在回车中会提示你输入一个密码，这个密码会在你提交项目的时候使用，如果为空的话提交项目时则不用输入密码。这个设置是防止别人往你的项目里提交内容。  </p>
+<p><strong>注意</strong>：输入密码时没有*字样，直接继续输入即可。  </p>
 <p>最后看到这样的界面，就成功设置ssh key了：  </p>
 <div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/sshkey2.png" width="500" alt="sshkeys2"></div>  
 
 <p>3.添加ssh key到coding  </p>
 <ul>
-<li>打开ssh key保存的路径<div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/%E8%B7%AF%E5%BE%84.png" width="500" alt="路径"></div>  </li>
+<li>打开ssh key保存的路径（图片中所指示的路径，是你自己的电脑上的）<div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/%E8%B7%AF%E5%BE%84.png" width="500" alt="路径"></div>  </li>
 <li><p>打开.ssh文件夹中的id_rsa.pub文件（用记事本打开即可），并复制里面所有内容  </p>
 </li>
 <li><p>浏览器打开coding并登陆自己的账号。</p>
@@ -391,12 +392,12 @@
 </li>
 </ul>
 <p>注意：配置ssh key到coding也可以根据<a href="https://coding.net/help/doc/git/ssh-key.html" target="_blank" rel="external">这个页面</a>的内容进行操作</p>
-<h4 id="安装hexo："><a href="#安装hexo：" class="headerlink" title="安装hexo："></a>安装hexo：</h4><p>建议根据<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">hexo官方文档</a>进行操作</p>
+<h3 id="安装hexo："><a href="#安装hexo：" class="headerlink" title="安装hexo："></a>安装hexo：</h3><p>建议根据<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">hexo官方文档</a>进行操作</p>
 <p>打开Git bash,安装hexo：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure>
 <p>建议安装hexo-sever  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-server --save</div></pre></td></tr></table></figure>
-<h4 id="建站："><a href="#建站：" class="headerlink" title="建站："></a>建站：</h4><p>转到自己希望站点存放的目录地址，新建文件夹并重命名。  </p>
+<h3 id="建站："><a href="#建站：" class="headerlink" title="建站："></a>建站：</h3><p>转到自己希望站点存放的目录地址，新建文件夹并重命名。  </p>
 <div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/hexo1.png" width="500" alt="hexo1"></div>   
 
 <p>右击鼠标，git bash here。</p>
@@ -406,25 +407,24 @@
 <p>文件夹中生成这些文件：</p>
 <div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/hexo3.png" width="500" alt="hexo3"></div>   
 
-<h4 id="配置hexo："><a href="#配置hexo：" class="headerlink" title="配置hexo："></a>配置hexo：</h4><p>由于coding.net需要名为Staticfile的文件作为静态文件部署的标志，所以：</p>
-<div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/hexo4.png" width="500" alt="hexo4"></div>   
+<h3 id="配置hexo："><a href="#配置hexo：" class="headerlink" title="配置hexo："></a>配置hexo：</h3><p>1.由于coding.net需要名为Staticfile的文件作为静态文件部署的标志，所以：</p>
+<div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/hexo4.png" width="500" alt="hexo4"></div>     
 
-<p>空白文件即可。  </p>
-<p>打开配置文件_config.yml</p>
+<p>2.打开配置文件_config.yml</p>
 <div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/hexo5.png" width="500" alt="hexo5"></div> 
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div></pre></td><td class="code"><pre><div class="line"># Hexo Configuration</div><div class="line">## Docs: https://hexo.io/docs/configuration.html</div><div class="line">## Source: https://github.com/hexojs/hexo/</div><div class="line"></div><div class="line"># Site</div><div class="line">title: Jio&apos;s Blog                              站点名称</div><div class="line">subtitle: 记录所思，分享所学                     副标题</div><div class="line">description: 日有所进，你的对手是昨日的自己       描述</div><div class="line">author: Jio Lin                                作者</div><div class="line">language: zh-Hans                              语言，简体中文就用zh-Hans</div><div class="line">timezone: UTC                                  时区</div><div class="line">email: 546704259@qq.com </div><div class="line"></div><div class="line"># URL</div><div class="line">## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;</div><div class="line">url: http://jio.ljhmvon.cn                     如果有自己的域名用自己的域名</div><div class="line">root: /</div><div class="line">permalink: :year/:month/:day/:title/</div><div class="line">permalink_defaults:</div><div class="line"></div><div class="line"># Directory</div><div class="line">source_dir: source</div><div class="line">public_dir: public</div><div class="line">tag_dir: tags</div><div class="line">archive_dir: archives</div><div class="line">category_dir: categories</div><div class="line">code_dir: downloads/code</div><div class="line">i18n_dir: :lang</div><div class="line">skip_render:</div><div class="line"></div><div class="line"># Writing</div><div class="line">new_post_name: :title.md # File name of new posts</div><div class="line">default_layout: post</div><div class="line">titlecase: false # Transform title into titlecase</div><div class="line">external_link: true # Open external links in new tab</div><div class="line">filename_case: 0</div><div class="line">render_drafts: false</div><div class="line">post_asset_folder: false</div><div class="line">relative_link: false</div><div class="line">future: true</div><div class="line">highlight:</div><div class="line">  enable: true</div><div class="line">  line_number: true</div><div class="line">  auto_detect: false</div><div class="line">  tab_replace:</div><div class="line"></div><div class="line"># Category &amp; Tag</div><div class="line">default_category: uncategorized</div><div class="line">category_map:                            分类地图，可不设置</div><div class="line">  设计: design </div><div class="line">  教程: study</div><div class="line">  思考: thinking</div><div class="line">  读书: reading  </div><div class="line">tag_map:</div><div class="line"></div><div class="line"># Date / Time format</div><div class="line">## Hexo uses Moment.js to parse and display date</div><div class="line">## You can customize the date format as defined in</div><div class="line">## http://momentjs.com/docs/#/displaying/format/</div><div class="line">date_format: YYYY-MM-DD</div><div class="line">time_format: HH:mm:ss</div><div class="line"></div><div class="line"># Pagination</div><div class="line">## Set per_page to 0 to disable pagination</div><div class="line">per_page: 10</div><div class="line">pagination_dir: page</div><div class="line"></div><div class="line"># Extensions</div><div class="line">## Plugins: https://hexo.io/plugins/</div><div class="line">## Themes: https://hexo.io/themes/</div><div class="line">theme: next                         可以更换为自己喜欢的主题</div><div class="line"></div><div class="line"># Deployment</div><div class="line">## Docs: https://hexo.io/docs/deployment.html       </div><div class="line">deploy:</div><div class="line">  type: git </div><div class="line">  repo: https://git.coding.net/gainttank/blog.git    从自己的coding项目上复制地址</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div></pre></td><td class="code"><pre><div class="line"># Hexo Configuration</div><div class="line">## Docs: https://hexo.io/docs/configuration.html</div><div class="line">## Source: https://github.com/hexojs/hexo/</div><div class="line"></div><div class="line"># Site</div><div class="line">title: Jio&apos;s Blog                              站点名称</div><div class="line">subtitle: 记录所思，分享所学                     副标题</div><div class="line">description: 日有所进，你的对手是昨日的自己       描述</div><div class="line">author: Jio Lin                                作者</div><div class="line">language: zh-Hans                              语言，简体中文就用zh-Hans</div><div class="line">timezone: UTC                                  时区</div><div class="line">email: 546704259@qq.com </div><div class="line"></div><div class="line"># URL</div><div class="line">## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;</div><div class="line">url: http://gainttank.coding.me/myblog        如果有自己的域名可以用自己的域名</div><div class="line">root: /myblog/</div><div class="line">permalink: :year/:month/:day/:title/</div><div class="line">permalink_defaults:</div><div class="line"></div><div class="line"># Directory</div><div class="line">source_dir: source</div><div class="line">public_dir: public</div><div class="line">tag_dir: tags</div><div class="line">archive_dir: archives</div><div class="line">category_dir: categories</div><div class="line">code_dir: downloads/code</div><div class="line">i18n_dir: :lang</div><div class="line">skip_render:</div><div class="line"></div><div class="line"># Writing</div><div class="line">new_post_name: :title.md # File name of new posts</div><div class="line">default_layout: post</div><div class="line">titlecase: false # Transform title into titlecase</div><div class="line">external_link: true # Open external links in new tab</div><div class="line">filename_case: 0</div><div class="line">render_drafts: false</div><div class="line">post_asset_folder: false</div><div class="line">relative_link: false</div><div class="line">future: true</div><div class="line">highlight:</div><div class="line">  enable: true</div><div class="line">  line_number: true</div><div class="line">  auto_detect: false</div><div class="line">  tab_replace:</div><div class="line"></div><div class="line"># Category &amp; Tag</div><div class="line">default_category: uncategorized</div><div class="line">category_map:                            分类地图，可不设置</div><div class="line">  设计: design </div><div class="line">  教程: study</div><div class="line">  思考: thinking</div><div class="line">  读书: reading  </div><div class="line">tag_map:</div><div class="line"></div><div class="line"># Date / Time format</div><div class="line">## Hexo uses Moment.js to parse and display date</div><div class="line">## You can customize the date format as defined in</div><div class="line">## http://momentjs.com/docs/#/displaying/format/</div><div class="line">date_format: YYYY-MM-DD</div><div class="line">time_format: HH:mm:ss</div><div class="line"></div><div class="line"># Pagination</div><div class="line">## Set per_page to 0 to disable pagination</div><div class="line">per_page: 10</div><div class="line">pagination_dir: page</div><div class="line"></div><div class="line"># Extensions</div><div class="line">## Plugins: https://hexo.io/plugins/</div><div class="line">## Themes: https://hexo.io/themes/</div><div class="line">theme: next                         可以更换为自己喜欢的主题</div><div class="line"></div><div class="line"># Deployment</div><div class="line">## Docs: https://hexo.io/docs/deployment.html       </div><div class="line">deploy:</div><div class="line">  type: git </div><div class="line">  repo: https://git.coding.net/gainttank/blog.git    从自己的coding项目上复制地址</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
 <p>此时就算是建好了。</p>
-<p>可以在本地进行测试。</p>
+<p>3.可以在本地进行测试。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>可简写为 <code>$ hexo g</code>     生成静态文件</p>
+<p>可简写为 <code>$ hexo g</code>，用于生成静态文件</p>
 <div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/hexo6.png" width="500" alt="hexo6"></div>   
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>可简写为 <code>$ hexo s</code>  启动服务器；默认访问网址为<code>http://localhost:4000/</code><br>若端口被占用，可修改 <code>$ hexo s -p 5000</code> 此时，访问网址为<code>http://localhost:5000/</code></p>
+<p>可简写为 <code>$ hexo s</code>，用于启动服务器；默认访问网址为<code>http://localhost:4000/</code><br>若端口被占用，可修改 <code>$ hexo s -p 5000</code> 此时，访问网址为<code>http://localhost:5000/</code></p>
 <div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/hexo7.png" width="500" alt="hexo7"></div> 
 
-<p>若要写新文章，<code>$ hexo new 新文章的名字</code> 即可。</p>
+<p>5.若要写新文章，<code>$ hexo new 新文章的名字</code> 即可。</p>
 <p>本地显示无误之后，就要将文章上传到项目上了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure></p>
 <p>若出现这样的问题：</p>
 <div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/hexo8.png" width="500" alt="hexo8"></div> 
@@ -432,20 +432,27 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
 <div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/hexo9.png" width="500" alt="hexo9"></div> 
 
-<p>再次上传即可成功。建议使用<code>$ hexo deploy -g</code>这条命令</p>
+<p>再次上传即可成功。建议使用<code>$ hexo deploy -g</code>这条命令进行上传。</p>
 <p>来到coding.net的自己的项目页，发现自己的东西上传成功。</p>
 <div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/hexo10.png" width="500" alt="hexo10"></div>
 
-<p>转到Pages服务：</p>
+<p>6.转到Pages服务：</p>
 <div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/hexo11.png" width="500" alt="hexo11"></div>
 
 <p>将部署分支修改为master，点击“立即开启”即可。</p>
 <p>现在你就可以通过coding提供给你的链接访问自己的博客了。</p>
 <div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/hexo12.png" width="500" alt="hexo12"></div>
 
+<p><strong>注意</strong>：在前面的_config.yml文件的配置中，你想要用什么域名访问，就必须填该域名。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># URL</div><div class="line">## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;</div><div class="line">url: http://gainttank.coding.me/myblog      注意这里    </div><div class="line">root: /myblog/</div><div class="line">permalink: :year/:month/:day/:title/</div><div class="line">permalink_defaults:</div></pre></td></tr></table></figure></p>
+<h3 id="修改主题："><a href="#修改主题：" class="headerlink" title="修改主题："></a>修改主题：</h3><p>本人使用的主题是<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT</a>,比较简约，个人比较喜欢。具体操作只要根据其官网上的流程走就OK。其中也有一些如多说评论，百度统计等第三方服务的使用教程，比较详细，可以借鉴。</p>
+<h3 id="404页面："><a href="#404页面：" class="headerlink" title="404页面："></a>404页面：</h3><p>推荐使用腾讯公益404页面。</p>
+<p>打开public文件夹，在里面新建404.html文件。</p>
+<div align="center"><img src="http://obq5d0fep.bkt.clouddn.com/404.png" width="500" alt="hexo12"></div>
 
-
-
+<p>用文本编辑器打开404.html并将以下内容复制进去。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE HTML&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8;&quot;/&gt;</div><div class="line">  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;</div><div class="line">  &lt;meta name=&quot;robots&quot; content=&quot;all&quot; /&gt;</div><div class="line">  &lt;meta name=&quot;robots&quot; content=&quot;index,follow&quot;/&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line"></div><div class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.qq.com/404/search_children.js&quot;</div><div class="line">        charset=&quot;utf-8&quot; homePageUrl=&quot;your site url &quot;</div><div class="line">        homePageName=&quot;回到我的主页&quot;&gt;</div><div class="line">&lt;/script&gt;</div><div class="line"></div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<h3 id="图床："><a href="#图床：" class="headerlink" title="图床："></a>图床：</h3><p>推荐使用<a href="http://www.qiniu.com/" target="_blank" rel="external">七牛</a>。</p>
+<h3 id="其他："><a href="#其他：" class="headerlink" title="其他："></a>其他：</h3><p>hexo写文章使用markdown，也比较简单，简单学习一下就会使用了。<a href="http://www.markdowntutorial.com/" target="_blank" rel="external">Markdown快速入门</a>,<a href="http://www.jianshu.com/p/9d94660a96f1" target="_blank" rel="external">Markdown使用小技巧</a></p>
 
       
     </div>
@@ -620,7 +627,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#总的流程："><span class="nav-number">1.</span> <span class="nav-text">总的流程：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#下载并安装"><span class="nav-number">1.1.</span> <span class="nav-text">下载并安装</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#注册coding并创建一个项目"><span class="nav-number">1.1.1.</span> <span class="nav-text">注册coding并创建一个项目</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置SSH-keys："><span class="nav-number">1.2.</span> <span class="nav-text">配置SSH keys：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#一、打开Git-bash："><span class="nav-number">1.2.1.</span> <span class="nav-text">一、打开Git bash：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#二、配置SSH-keys："><span class="nav-number">1.2.2.</span> <span class="nav-text">二、配置SSH keys：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装hexo："><span class="nav-number">1.3.</span> <span class="nav-text">安装hexo：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#建站："><span class="nav-number">1.4.</span> <span class="nav-text">建站：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置hexo："><span class="nav-number">1.5.</span> <span class="nav-text">配置hexo：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#总的流程："><span class="nav-number">1.</span> <span class="nav-text">总的流程：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载并安装"><span class="nav-number">1.1.</span> <span class="nav-text">下载并安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#注册coding并创建一个项目"><span class="nav-number">1.1.1.</span> <span class="nav-text">注册coding并创建一个项目</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置SSH-keys："><span class="nav-number">1.2.</span> <span class="nav-text">配置SSH keys：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、打开Git-bash："><span class="nav-number">1.2.1.</span> <span class="nav-text">一、打开Git bash：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、配置SSH-keys："><span class="nav-number">1.2.2.</span> <span class="nav-text">二、配置SSH keys：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo："><span class="nav-number">1.3.</span> <span class="nav-text">安装hexo：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#建站："><span class="nav-number">1.4.</span> <span class="nav-text">建站：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置hexo："><span class="nav-number">1.5.</span> <span class="nav-text">配置hexo：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改主题："><span class="nav-number">1.6.</span> <span class="nav-text">修改主题：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#404页面："><span class="nav-number">1.7.</span> <span class="nav-text">404页面：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图床："><span class="nav-number">1.8.</span> <span class="nav-text">图床：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他："><span class="nav-number">1.9.</span> <span class="nav-text">其他：</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
