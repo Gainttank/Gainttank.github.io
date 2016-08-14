@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="hexo coding.net," />
 
 
 
@@ -84,15 +84,47 @@
 
 
 
-<meta name="description" content="日有所进，你的对手是昨日的自己">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jio's Blog">
-<meta property="og:url" content="http://jio.ljhmvon.cn/index.html">
+<meta name="description" content="总的流程：1.下载安装Git,Node.js；2.注册coding账号或github账号（在国内推荐使用coding，一下均以coding为例）；3.在coding创建项目4.添加ssh key到coding5.安装hexo6.使用hexo搭建，配置，并上传项目
+
+####下载并安装&amp;ensp; 1、Git&amp;ensp; 2、node.js
+#####注册coding并创建一个项目">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何搭建这个独立博客">
+<meta property="og:url" content="http://jio.ljhmvon.cn/2016/08/14/如何搭建这个独立博客/index.html">
 <meta property="og:site_name" content="Jio's Blog">
-<meta property="og:description" content="日有所进，你的对手是昨日的自己">
+<meta property="og:description" content="总的流程：1.下载安装Git,Node.js；2.注册coding账号或github账号（在国内推荐使用coding，一下均以coding为例）；3.在coding创建项目4.添加ssh key到coding5.安装hexo6.使用hexo搭建，配置，并上传项目
+
+####下载并安装&amp;ensp; 1、Git&amp;ensp; 2、node.js
+#####注册coding并创建一个项目">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/%E5%88%9B%E9%A1%B91.jpg">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/%E5%88%9B%E6%83%B32.jpg">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/%E6%89%93%E5%BC%801.png">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/%E6%89%93%E5%BC%802.png">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/sshkeys1.png">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/sshkey2.png">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/%E8%B7%AF%E5%BE%84.png">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/sshkey3.png">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/sshkey4.png">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/hexo1.png">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/hexo2.png">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/hexo3.png">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/hexo4.png">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/hexo5.png">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/hexo6.png">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/hexo7.png">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/hexo8.png">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/hexo9.png">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/hexo10.png">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/hexo11.png">
+<meta property="og:image" content="http://obq5d0fep.bkt.clouddn.com/hexo12.png">
+<meta property="og:updated_time" content="2016-08-14T12:38:41.755Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jio's Blog">
-<meta name="twitter:description" content="日有所进，你的对手是昨日的自己">
+<meta name="twitter:title" content="如何搭建这个独立博客">
+<meta name="twitter:description" content="总的流程：1.下载安装Git,Node.js；2.注册coding账号或github账号（在国内推荐使用coding，一下均以coding为例）；3.在coding创建项目4.添加ssh key到coding5.安装hexo6.使用hexo搭建，配置，并上传项目
+
+####下载并安装&amp;ensp; 1、Git&amp;ensp; 2、node.js
+#####注册coding并创建一个项目">
+<meta name="twitter:image" content="http://obq5d0fep.bkt.clouddn.com/%E5%88%9B%E9%A1%B91.jpg">
 
 
 
@@ -113,9 +145,9 @@
 
 
 
-  <link rel="canonical" href="http://jio.ljhmvon.cn/"/>
+  <link rel="canonical" href="http://jio.ljhmvon.cn/2016/08/14/如何搭建这个独立博客/"/>
 
-  <title> Jio's Blog </title>
+  <title> 如何搭建这个独立博客 | Jio's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,9 +168,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -235,9 +265,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -257,10 +287,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/08/14/如何搭建这个独立博客/" itemprop="url">
-                  如何搭建这个独立博客
-                </a>
+                如何搭建这个独立博客
               
             
           </h1>
@@ -326,9 +353,7 @@
       
 
       
-        
-          
-            <h3 id="总的流程："><a href="#总的流程：" class="headerlink" title="总的流程："></a>总的流程：</h3><p>1.下载安装Git,Node.js；<br>2.注册coding账号或github账号（在国内推荐使用coding，一下均以coding为例）；<br>3.在coding创建项目<br>4.添加ssh key到coding<br>5.安装hexo<br>6.使用hexo搭建，配置，并上传项目</p>
+        <h3 id="总的流程："><a href="#总的流程：" class="headerlink" title="总的流程："></a>总的流程：</h3><p>1.下载安装Git,Node.js；<br>2.注册coding账号或github账号（在国内推荐使用coding，一下均以coding为例）；<br>3.在coding创建项目<br>4.添加ssh key到coding<br>5.安装hexo<br>6.使用hexo搭建，配置，并上传项目</p>
 <hr>
 <p>####下载并安装<br>&ensp; 1、<a href="https://git-scm.com/" target="_blank" rel="external">Git</a><br>&ensp; 2、<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js</a></p>
 <p>#####注册<a href="https://coding.net/" target="_blank" rel="external">coding</a>并创建一个项目</p>
@@ -432,163 +457,78 @@
 
 
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/13/为什么建立博客/" itemprop="url">
-                  为什么建立博客？
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-12T21:32:17Z" content="2016-08-12">
-              2016-08-12
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/thinking/" itemprop="url" rel="index">
-                    <span itemprop="name">思考</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/08/13/为什么建立博客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/13/为什么建立博客/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
+            <a href="/tags/hexo-coding-net/" rel="tag">#hexo coding.net</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p>先占用一点版面说点啥，毕竟这是本人第一篇日志。  </p>
-<p>首先恭喜我自己瞎折腾了这么久，终于把这个博客搞定了。欢迎大家来关注。虽然博客现在不怎么流行，但我相信它的价值还是巨大的。</p>
-<p>其次，我希望以这个博客作为分界线，暂时与计算机技术告别。专心学习设计，提高设计表达能力。  </p>
-<p>喝水不忘挖井人，下一篇我便会将搭这个博客的方法再梳理一遍。  </p>
-<hr>
-<h3 id="现实"><a href="#现实" class="headerlink" title="现实"></a>现实</h3><p>大学已经过半，到手的东西似乎并没有想象的那么丰富。归根结底，一个“懒”字。这两年，相较专业，我接触“前端”更多（相较“前端”，我看剧的时间更多╮(╯▽╰)╭）  。<br>在这交接点上，我希望能做个决断吧。希望现在开始，能留些东西下来。</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/08/13/为什么建立博客/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/13/为什么建立博客/" rel="next" title="为什么建立博客？">
+                <i class="fa fa-chevron-left"></i> 为什么建立博客？
+              </a>
+            
           </div>
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/08/14/如何搭建这个独立博客/"
+     data-title="如何搭建这个独立博客"
+     data-content=""
+     data-url="http://jio.ljhmvon.cn/2016/08/14/如何搭建这个独立博客/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
 
 
           </div>
@@ -596,6 +536,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/08/14/如何搭建这个独立博客/"
+           data-title="如何搭建这个独立博客" data-url="http://jio.ljhmvon.cn/2016/08/14/如何搭建这个独立博客/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -615,8 +563,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://obq5d0fep.bkt.clouddn.com/avatar.png"
@@ -666,6 +623,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#总的流程："><span class="nav-number">1.</span> <span class="nav-text">总的流程：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置SSH-keys："><span class="nav-number">1.1.</span> <span class="nav-text">配置SSH keys：</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -762,6 +730,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
